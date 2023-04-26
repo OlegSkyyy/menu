@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Dynamic;
 
 namespace menu // Note: actual namespace depends on the project name.
 {
@@ -10,36 +11,36 @@ namespace menu // Note: actual namespace depends on the project name.
             string v;
             v = Console.ReadLine();
             int a = 0; int b = 0;
-            switch(v)
+            switch (v)
             {
                 case "1":
                     {
-
+                        a = Convert.ToInt32(Console.ReadLine());
                     }
                     break;
                 case "2":
                     {
-
+                        b = Convert.ToInt32(Console.ReadLine());
                     }
                     break;
                 case "3":
                     {
-
+                        Console.WriteLine(a + b);
                     }
                     break;
                 case "4":
                     {
-
+                        Console.WriteLine(a - b);
                     }
                     break;
                 case "5":
                     {
-
+                        Console.WriteLine(a * b);
                     }
                     break;
                 case "6":
                     {
-
+                        Console.WriteLine(a / b);
                     }
                     break;
             }
