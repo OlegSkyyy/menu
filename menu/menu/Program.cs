@@ -30,7 +30,7 @@ namespace menu // Note: actual namespace depends on the project name.
                     break;
                 case "4":
                     {
-
+                        Console.WriteLine(a - b);
                     }
                     break;
                 case "5":
