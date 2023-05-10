@@ -5,8 +5,33 @@ namespace menu // Note: actual namespace depends on the project name.
 {
     internal class Program
     {
+        static void InputA(ref int a)
+        {
+
+        }
+        static void InputB(ref int b)
+        {
+
+        }
+        static void WritePlus(int a, int b)
+        {
+
+        }
+        static void WriteMinus(int a, int b)
+        {
+
+        }
+        static void WriteMul(int a, int b)
+        {
+
+        }
+        static void WriteDiv(int a, int b)
+        {
+
+        }
         static void Main(string[] args)
         {
+
             Console.WriteLine("Ввести A (1)\nВвести B (2)\nвыполнить операцию “+” (3)\nвыполнить операцию “-” (4)\nвыполнить операцию “*” (5)\nвыполнить операцию “/” (6)");
             string v;
             v = Console.ReadLine();
@@ -15,35 +40,36 @@ namespace menu // Note: actual namespace depends on the project name.
             {
                 case "1":
                     {
-                        a = Convert.ToInt32(Console.ReadLine());
+                        InputA(ref a);
                     }
                     break;
                 case "2":
                     {
-                        b = Convert.ToInt32(Console.ReadLine());
+                        InputA(ref b);
                     }
                     break;
                 case "3":
                     {
-                        Console.WriteLine(a + b);
+                        WritePlus(a, b);
                     }
                     break;
                 case "4":
                     {
-                        Console.WriteLine(a - b);
+                        WriteMinus(a, b);
                     }
                     break;
                 case "5":
                     {
-                        Console.WriteLine(a * b);
+                        WriteMul(a, b);
                     }
                     break;
                 case "6":
                     {
-                        Console.WriteLine(a / b);
+                        WriteDiv(a, b);
                     }
                     break;
             }
         }
+        
     }
 }
